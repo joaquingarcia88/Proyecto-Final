@@ -1,6 +1,6 @@
 
 /*variables*/
-$fuente-letras: "arial, sans-serif";
+$fuente-letras:'Open Sans', sans-serif;
 $color-fondo: #333;
 
 
@@ -61,6 +61,7 @@ nav ul {
     border: 1px solid black;
     padding: 20px;
     text-align: center;
+    background-color: $color-fondo;
 
     img {
         max-width: 100%;
@@ -68,13 +69,24 @@ nav ul {
     }
 }
 
+    .productoP {
+        border: none; 
+        
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    } 
+
+
 
 /* Estilos del pie de página */
 footer {
     background-color: $color-fondo;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
 }
 
 
@@ -179,7 +191,7 @@ footer {
 }
 
 .formulario-contacto button[type="submit"] {
-    background-color: #007bff;
+    background-color: #0d3866;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -212,12 +224,15 @@ body form {
     background-color: grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+
 
 /* Estilos para los campos de entrada */
 .form-group {
@@ -295,7 +310,7 @@ h1 {
 /* Estilos para el botón de envío */
 .btn-primary-C {
     width: 100%;
-    background-color: #007bff;
+    background-color: #0c4a8b;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -305,8 +320,9 @@ h1 {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #084381;
 }
+
 
 
 
@@ -339,8 +355,26 @@ h1 {
 .formC {
     background-color: $color-fondo;
 }
+.containerC .btn-primary {
+    background-color: #084381;
 
+    border: none;
+}
+ .containerf .btn-primary {
+    background-color: #084381;
+    border: none;
+ }
 
-
-
-
+.titulo {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand {
+        font-family: 'Rubik', sans-serif;
+}
+.producto {
+    font-family: 'Roboto', sans-serif;
+}
+#navbarNav {
+    font-family: 'Roboto', sans-serif;
+}
