@@ -317,3 +317,9 @@ h1 {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+.perfil {
+  color: white; }
+
+.producto :hover {
+  scale: 1.1; }
