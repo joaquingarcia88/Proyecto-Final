@@ -11,6 +11,10 @@
         <meta name="keywords" content="Zapatillas, Accesorios, nike, moda">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&family=Rubik:ital@1&display=swap" rel="stylesheet">
     <!-- Incluye las hojas de estilo de Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -23,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container">
                 <!-- Logo o nombre -->
-                <a class="navbar-brand" href="#">Veltra</a>
+                <a class="navbar-brand" href="index.html">Veltra</a>
     
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,16 +60,59 @@
 
 
         <div class="container">
-            <h1>Inicio</h1>
+            <h1>Bienvenidos a mi proyecto final!</h1>
+            <p class="parrafo">
+Mi nombre es Joaquin Garcia, en este proyecto quise hacer un simulador/prototipo de una tienda de ropa virtual, donde por gusto propio muestro zapatillas y accesorios de la marca Nike, dandole un estilo con colores oscuros y contrastando con los articulos en blanco para que resalten mas, creando una sola tonalidad de grises para los fondos, una gama de colores sencilla donde busque obtener la mayor de la atencion en los productos mostrados, espero les guste!!
 
+            </p>
 
-            <div class="row">
-           <div class="col-lg-12 col-md-12 col-12">
-            <article class="productoP">
-              <img src="img/jordanPA.avif">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores del carrusel -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+                        <li data-target="#miCarrusel" data-slide-to="1"></li>
+                        <li data-target="#miCarrusel" data-slide-to="2"></li>
+                    </ul>
+            
+                    <!-- Slides del carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           
+                            <img src="img/p9.png" alt="Zapatilla Nike Dunk High Retro blanca y marron" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3 class="zapa"> Dunk High Retro</h3>
+                                   <p class="carru"> La parte superior de cuero impecable envejece con elegancia para ofrecer suavidad y diseño duradero para evocar el básquetbol de los 80. </p>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/dunk low.png" alt="Zapatilla Nike Dunk Low blanca con tonalidades verdes" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3 class="zapa">Dunk Low</h3>
+                                <p class="carru"> El cuero impecable tiene un ligero brillo y adquiere la suavidad perfecta con el tiempo. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/air max90.png" alt="Zapatilla Nike Air Max 90 con colores negros blancos marrones y detalles rosas" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h3 class="zapa">Air Max 90</h3>
+                                <p class="carru"> Diseñada originalmente para el running de alto rendimiento, la amortiguación Air visible pone la historia de la comodidad debajo de tus pies</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <a class="carousel-control-prev" href="#miCarrusel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                </div>
             </div>
-            </div>
-            </article>
 
 
             <h2 class="titulo"> Productos
@@ -76,7 +123,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                 <article class="producto">
                   <img src="img/p7.png" alt="Zapatilla Nike Air Max 90 blanca">
-                <h2>Air Max 90</h2>
+                <h3>Air Max 90</h3>
                 <p>Precio: $80.000</p>
                 <button type="button" class="btn btn-light">Añadir al carrito</button>
             </article> 
@@ -86,7 +133,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                   <article class="producto">
                   <img src="img/p8.png" alt="Zapatilla Nike Air Max Plus azul y negra">
-                <h2>Air Max Plus</h2>
+                <h3>Air Max Plus</h3>
                 <p>Precio: $80.000</p>
                 <button type="button" class="btn btn-light">Añadir al carrito</button>
             </article>
@@ -96,7 +143,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                   <article class="producto">
                   <img src="img/p6.png" alt="Zapatilla Nike Air Max TN blanca con detalles celestes">
-                <h2>Air Max TN</h2>
+                <h3>Air Max TN</h3>
                 <p>Precio: $80.000</p>
                 <button type="button" class="btn btn-light">Añadir al carrito</button>
             </article>
@@ -105,7 +152,7 @@
     
                 <div class="col-lg-3 col-md-6 col-12">
                  <article class="producto">
-                  <img src="img/p5.png" alt="Zapatilla Nike Dunk Low con detalles grises y azules">
+                  <img src="img/dunk low.png" alt="Zapatilla Nike Dunk Low con detalles grises y azules">
                 <h2>Dunk Low</h2>
                 <p>Precio: $80.000</p>
                 <button type="button" class="btn btn-light">Añadir al carrito</button>
@@ -114,47 +161,49 @@
             </div>
     
     
-            <div class="col-lg-3 col-md-6 col-12">
-                  <article class="producto">
-                  <img src="img/p4.png" alt="Zapatilla Nike Air Force 1 blanca con distintos tipos de azules">
-                <h2>Air Force 1</h2>
-                <p>Precio: $80.000</p>
-                <button type="button" class="btn btn-light">Añadir al carrito</button>
-            </article>
-                </div>
-            </p>
+             <div class="col-lg-3 col-md-6 col-12">
+          <article class="productoJ">
+          <img src="img/gorra2.png" alt="Gorra Nike color gris">
+        <h3>Gorro Naranja</h3>
+        <p>Precio: $14.000</p>
+        <button type="button" class="btn btn-light">Añadir al carrito</button>
+    </article>
+        </div>
+    </p>
     
-                <div class="col-lg-3 col-md-6 col-12">
-                  <article class="producto">
-                  <img src="img/p2.png" alt="Zapatilla Nike Air Max Excee negra y blanca con detalles azules">
-                <h2>Air Max Excee</h2>
-                <p>Precio: $80.000</p>
-                <button type="button" class="btn btn-light">Añadir al carrito</button>
-            </article>
-                </div>
-            </p>
-    
-    
-                <div class="col-lg-3 col-md-6 col-12">
-                  <article class="producto">
-                  <img src="img/p1.png" alt="Zapatilla Nike Air Max Alpha gris y negra con detalle azul marino">
-                <h2>Air Max Alpha</h2>
-                <p>Precio: $80.000</p>
-                <button type="button" class="btn btn-light">Añadir al carrito</button>
-            </article>
-                </div>
-            </p>
+    <div class="col-lg-3 col-md-6 col-12">
+        <article class="productoJ">
+        <img src="img/gorro4.png" alt="Gorro Nike color beige">
+      <h3>Gorro beige</h3>
+      <p>Precio: $14.000</p>
+      <button type="button" class="btn btn-light">Añadir al carrito</button>
+  </article>
+      </div>
+  </p>
     
     
-                <div class="col-lg-3 col-md-6 col-12">
-                <article class="producto">
-                  <img src="img/p9.png" alt="Zapatilla Nike Dunk All Star blanca y marron">
-                <h2>Dunk All Star</h2>
-                <p>Precio: $80.000</p>
-                <button type="button" class="btn btn-light">Añadir al carrito</button>
-            </article>
-                </div>
-            </p>
+  <div class="col-lg-3 col-md-6 col-12">
+    <article class="productoJ">
+      <img src="img/gorra.png" alt="Gorra Nike color negro">
+    <h3>Gorra</h3>
+    <p>Precio: $12.000</p>
+    <button type="button" class="btn btn-light">Añadir al carrito</button>
+</article>
+    </div>
+</p>
+    
+    
+<div class="col-lg-3 col-md-6 col-12">
+    <article class="productoJ">
+    <img src="img/pelota.png" alt="Pelota de rugby nike color negro">
+  <h3>Pelota</h3>
+  <p>Precio: $35.000</p>
+  <button type="button" class="btn btn-light">Añadir al carrito</button>
+</article>
+</p>
+</div>
+
+           
 
         </main>
     
@@ -165,7 +214,7 @@
         <footer>
             <p>&copy; 2023 Tienda de Ropa
             </p>
-            <ul>
+            <ul id="links">
                 <li>Redes: <a class="perfil" href="https://www.linkedin.com/in/joaquin-garcia-534b23232/">Linkedin <a class="perfil" href="https://www.facebook.com/joaco.gar.18">Facebook <a class="perfil" href="https://www.instagram.com/joaquin03garcia/"> Instagram</li>
             </ul>
         </footer>
